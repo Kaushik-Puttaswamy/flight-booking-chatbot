@@ -1,0 +1,44 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - book_flight
+  - inform
+  - affirm
+  - deny
+
+entities:
+  - origin
+  - destination
+  - date
+
+slots:
+  origin:
+    type: text
+  destination:
+    type: text
+  date:
+    type: text
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I help you with your flight booking today?"
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great trip."
+
+  utter_ask_origin:
+    - text: "Where are you flying from?"
+
+  utter_ask_destination:
+    - text: "Where would you like to fly to?"
+
+  utter_ask_date:
+    - text: "When do you want to travel?"
+
+  utter_booking_confirmed:
+    - text: "Your flight from {origin} to {destination} on {date} has been booked."
+
+actions:
+  - action_book_flight
