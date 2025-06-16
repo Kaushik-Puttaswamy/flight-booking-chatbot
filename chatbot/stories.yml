@@ -1,0 +1,22 @@
+version: "3.1"
+
+stories:
+- story: book a flight
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_flight
+  - action: utter_ask_origin
+  - intent: inform
+    entities:
+      - origin: "New York"
+  - action: utter_ask_destination
+  - intent: inform
+    entities:
+      - destination: "London"
+  - action: utter_ask_date
+  - intent: inform
+    entities:
+      - date: "2025-07-10"
+  - action: action_book_flight
+  - action: utter_booking_confirmed

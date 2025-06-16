@@ -1,0 +1,42 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey there
+    - good morning
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+
+- intent: book_flight
+  examples: |
+    - I want to book a flight
+    - book a ticket
+    - I need to fly somewhere
+    - can you help me find a flight?
+
+- intent: inform
+  examples: |
+    - I'm flying from New York
+    - to Los Angeles
+    - on July 10th
+    - I want to go to London
+    - leaving from Delhi
+
+- intent: affirm
+  examples: |
+    - yes
+    - that's right
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - not yet
+    - that's wrong
