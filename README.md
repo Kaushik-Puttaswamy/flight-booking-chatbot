@@ -1,3 +1,6 @@
+![WIP](https://img.shields.io/badge/status-in--progress-yellow)
+
+
 # 🧠 Flight Booking Chatbot (Rasa)
 
 A complete end-to-end chatbot for booking flights using Rasa, Flask, and a web UI.
